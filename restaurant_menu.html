@@ -3,6 +3,23 @@
     <head>
       <meta charset="UTF-8">
 			<title>Sasukes Restaurant – Menu</title>
+      <style>
+        h1 {
+          color: orange;
+        }
+        h2 {
+          color: navy;
+        }
+        h3 {
+          color: darkred;
+        }
+        .border {
+          width: 50%;
+          height: 2px;
+          background-color: orange;
+          margin: 10px 0;
+        }
+      </style>
 		</head>
 		<body>
 			<header>
@@ -14,6 +31,7 @@
 						<li><a href="#order-form">Order</a></li>
 					</ul>
 				</nav>
+        <div class="border"></div>
 			</header>
 
 			<main>
@@ -21,25 +39,52 @@
 					<h2>Menu</h2>
 					<br>
 					<article>
-						<img style="width:100px;" alt="Picture with Ramen" src="https://assets.bonappetit.com/photos/5e3c7a3c866b940008106763/4:3/w_4640,h_3480,c_limit/HLY-Veggie-Ramen-16x9.jpg">
+						<img style="width: 150px;" alt="Picture with Ramen" src="https://assets.bonappetit.com/photos/5e3c7a3c866b940008106763/4:3/w_4640,h_3480,c_limit/HLY-Veggie-Ramen-16x9.jpg">
 						<h3>Ramen</h3>
-						<p>Rich broth, springy noodles, bold flavor.<br>A comforting bowl crafted to warm and satisfy.<br>€9.50</p>
+						<p>Rich broth, springy noodles, bold flavor.<br>A comforting bowl crafted to warm and satisfy.<br><strong>€9.50</strong></p>
 					</article>
 					<br>
 					<article>
-						<img style="width:100px;" alt="Picture with Red Bean Soup" src="https://asianinspirations.com.au/wp-content/uploads/2018/07/R00640_Hong-Dou_Tang.jpg">
+						<img style="width: 150px;" alt="Picture with Red Bean Soup" src="https://asianinspirations.com.au/wp-content/uploads/2018/07/R00640_Hong-Dou_Tang.jpg">
 						<h3>Red Bean Soup</h3>
-						<p>Sweet, velvety red bean soup.<br>A warm, comforting finish to your meal.<br>€4.50</p>
+						<p>Sweet, velvety red bean soup.<br>A warm, comforting finish to your meal.<br><strong>€4.50</strong></p>
 					</article>
 					<br>
 					<article>
-						<img style="width:100px;" alt="Picture with Food Pills" src="https://www.safefood.net/getmedia/4cf1f6a3-f1da-4d98-a8b8-13b03e89203d/food-supplements.jpg?w=2000&h=1333&ext=.jpg&width=1360&resizemode=force">
+						<img style="width: 150px;" alt="Picture with Food Pills" src="https://www.safefood.net/getmedia/4cf1f6a3-f1da-4d98-a8b8-13b03e89203d/food-supplements.jpg?w=2000&h=1333&ext=.jpg&width=1360&resizemode=force">
 						<h3>Food Pills</h3>
-						<p>Tiny power-packed bites to boost your ninja energy.<br>€3.00</p>
+						<p>Tiny power-packed bites to boost your ninja energy.<br><strong>€3.00</strong></p>
 					</article>
+          <div class="border"></div>
 				</section>
+        <br>
 				<section>
 					<h2>Place Your Order</h2>
+          <br>
+          <form action="" method="">
+            <label for="ramen">Ramen - €9.50 </label><input type="number" min="0" id="ramen">
+            <br>
+            <label for="red_bean_soup">Red Bean Soup - €4.50 </label><input type="number" min="0" id="red_bean_soup">
+            <br>
+            <label for="food_pills">Food Pills - €3.00 </label><input type="number" min="0" id="food_pills">
+            <br><br>
+            <label for="vegetarian">Vegetarian:</label>
+            <input type="checkbox" id="vegetarian">
+            <br>
+            <label for="gluten_free">Gluten-Free:</label>
+            <input type="checkbox" id="gluten_free">
+            <br>
+            <label for="vegan">Vegan:</label>
+            <input type="checkbox" id="vegan">
+            <br><br>
+            <textarea id="special_requests" rows="4" cols="50" placeholder="Special Requests e.g. Chakra Pills"></textarea>
+            <br><br>
+            <input type="submit" value="Go To Checkout">
+            <div class="border"></div>
+          </form>
 				</section>
 			</main>
+      <footer> 
+        <p>Made with love by AkaMisaki</p>
+      </footer>
 		</body>
